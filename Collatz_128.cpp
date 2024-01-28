@@ -14,9 +14,11 @@ int main()
 	unsigned long long step;
 	unsigned long long a = 0x93;
 	unsigned long long b = 0;
+	unsigned long long d=1;
 	int i = 0;
 	higher = 0;
 	b = a;
+	d = higher;
 	for (i = 0; i < 3; ++i)
 	{
 		step = 0;
@@ -32,6 +34,8 @@ int main()
 		std::cout << "   s=" << step << "\n\n\n";
 		++b;
 		a = b;
+		higher=d;
+
 	}
 	return(0);
 }
